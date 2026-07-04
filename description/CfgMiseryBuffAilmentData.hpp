@@ -1,210 +1,203 @@
 class CfgMisery_BuffsAilments {
     class Buffs {
         class NearFire {
-            name = "Near Fire";
+            name = "$STR_TheBurningRain_Status_NearFire";
             image = "z\misery\addons\icons\data\nearfire_ca.paa";
-            description = "- When near a fire, you will be warmed from the cold, you can also utilize the fire for cooking, or boiling water to kill off micro-organisms...";
+            description = "$STR_TheBurningRain_Desc_NearFire";
             showCondition = "private _isInflamed = (call misery_common_fnc_nearFire) select 1; _isInflamed"; // True to show
             removeCondition = "private _isInflamed = (call misery_common_fnc_nearFire) select 1; !_isInflamed"; // True to remove
         };
         class Sheltered {
-            name = "Sheltered";
+            name = "$STR_TheBurningRain_Status_Sheltered";
             image = "z\misery\addons\icons\data\shelter_ca.paa";
-            description = "- You are sheltered from the weather, while inside you cannot build a fire due to smoke inhalation...";
+            description = "$STR_TheBurningRain_Desc_Sheltered";
             showCondition = "insideBuilding player isEqualTo 1";
             removeCondition = "insideBuilding player isNotEqualTo 1";
         };
-        class ShelteredPowered {
-            name = "Power";
-            image = "z\misery\addons\icons\data\house_plug_ca.paa";
-            description = "- You are sheltered with power being provided by a nearby generator, the generator steadily hums outside while making your shelter comfortable...";
-            showCondition = "[player, 150] call misery_generator_fnc_nearGenerator params ['', '_generator']; insideBuilding player isEqualTo 1 && !isNil '_generator' && _generator getVariable ['misery_generator_isRunning', false]";
-            removeCondition = "insideBuilding player isNotEqualTo 1";
-        };
         class GasMask {
-            name = "Gas Mask";
+            name = "$STR_TheBurningRain_Status_GasMask";
             image = "";
-            description = "- You are wearing a gasmask, it can protect your lungs from harmful contaminants like radioactive particles, as well as toxic gases. You should be mindful of your cartridges...";
+            description = "$STR_TheBurningRain_Desc_GasMask";
             showCondition = "[player] call misery_protection_fnc_totalProtection params ['_gasMask', '_scba']; _gasMask > 0 && _scba isEqualTo 0";
             removeCondition = "[player] call misery_protection_fnc_totalProtection params ['_gasMask', '_scba']; _gasMask <= 0";
         };
         class SCBA {
-            name = "SCBA";
+            name = "$STR_TheBurningRain_Status_SCBA";
             image = "z\misery\addons\icons\data\dioxygen_ca.paa";
-            description = "- You are wearing an SCBA unit, which is the highest form of respiratory protection you can have...";
+            description = "$STR_TheBurningRain_Desc_SCBA";
             showCondition = "[player] call misery_protection_fnc_totalProtection params ['_gasMask', '_scba']; _scba >= 1";
             removeCondition = "[player] call misery_protection_fnc_totalProtection params ['_gasMask', '_scba']; _scba < 1";
         };
         class Temperate {
-            name = "Temperate";
+            name = "$STR_TheBurningRain_Status_Temperate";
             image = "z\misery\addons\icons\data\thermometer_ca.paa";
-            description = "- You are comfortable...";
+            description = "$STR_TheBurningRain_Desc_Temperate";
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v > -0.0005 && _v < 0.0005";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v >= 0.0005 || _v < -0.0005";
         };
         class HeatPack {
-            name = "Heatpack";
+            name = "$STR_TheBurningRain_Status_Heatpack";
             image = "z\misery\addons\icons\data\thermometer_sun_ca.paa";
-            description = "- Heat pack in use";
+            description = "$STR_TheBurningRain_Desc_Heatpack";
             showCondition = "misery_temperature_thermalPackHeatActive";
             removeCondition = "!misery_temperature_thermalPackHeatActive";
         };
         class ColdPack {
-            name = "Coldpack";
+            name = "$STR_TheBurningRain_Status_Coldpack";
             image = "z\misery\addons\icons\data\thermometer_snowflake_ca.paa";
-            description = "- Cold pack in use";
+            description = "$STR_TheBurningRain_Desc_Coldpack";
             showCondition = "misery_temperature_thermalPackColdActive";
             removeCondition = "!misery_temperature_thermalPackColdActive";
         };
         class FTRKit {
-            name = "FTR Kit";
+            name = "$STR_TheBurningRain_Status_FTRKit";
             image = "z\misery\addons\icons\data\sun_snow_ca.paa";
-            description = "- Field thermal regulation kit in use";
+            description = "$STR_TheBurningRain_Desc_FTRKit";
             showCondition = "misery_temperature_thermalBagActive";
             removeCondition = "!misery_temperature_thermalBagActive";
         };
     };
     class Ailments {
         class ParasiteInfection {
-            name = "Parasite Infection";
+            name = "$STR_TheBurningRain_Status_ParasiteInfection";
             image = "z\misery\addons\icons\data\worm_ca.paa";
-            description = "- You are infected with Parasites, You feel a gnawing hunger that is unsatiable, as well as unquenchable thirst...";
+            description = "$STR_TheBurningRain_Desc_ParasiteInfection";
             showCondition = "player getVariable ['misery_survival_parasites', 0] > 0";
             removeCondition = "player getVariable ['misery_survival_parasites', 0] <= 0";
         };
         class Tired {
-            name = "Tired";
+            name = "$STR_TheBurningRain_Status_Tired";
             image = "z\misery\addons\icons\data\bed_ca.paa";
-            description = "- You are Tired...";
-            showCondition = "player getVariable ['misery_survival_energyDeficit', 0] >= 0.1";
-            removeCondition = "player getVariable ['misery_survival_energyDeficit', 0] < 0.1";
+            description = "$STR_TheBurningRain_Desc_Tired";
+            showCondition = "player getVariable ['misery_survival_energyDeficit', 0] >= 0.4";
+            removeCondition = "player getVariable ['misery_survival_energyDeficit', 0] < 0.4";
         };
         class Terrified {
-            name = "Terrified";
-            image = "z\misery\addons\icons\data\ghost_ca.paa";
-            description = "- Your heart races wildly, breaths come in shallow gasps, dread of sudden death overwhelms you...";
+            name = "$STR_TheBurningRain_Status_Terrified";
+            image = "z\misery\addons\icons\data\brain_ca.paa";
+            description = "$STR_TheBurningRain_Desc_Terrified";
             showCondition = "misery_psychosis_terrifiedState";
             removeCondition = "!misery_psychosis_terrifiedState";
         };
         class Chilly {
-            name = "Chilly";
+            name = "$STR_TheBurningRain_Status_Chilly";
             image = "z\misery\addons\icons\data\thermometer_snowflake_ca.paa";
-            description = "- You are getting cold...";
+            description = "$STR_TheBurningRain_Desc_Chilly";
             // Range: Exactly between 0 and -0.25
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v < -0.0005 && _v >= -0.25";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v >= 0 || _v < -0.25";
         };
         class Cold {
-            name = "Cold";
+            name = "$STR_TheBurningRain_Status_Cold";
             image = "z\misery\addons\icons\data\thermometer_snowflake_ca.paa";
-            description = "- You are cold...";
+            description = "$STR_TheBurningRain_Desc_Cold";
             // Range: Lower than -0.25 down to -0.5
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v < -0.25 && _v >= -0.5";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v >= -0.25 || _v < -0.5";
         };
         class Freezing {
-            name = "Freezing";
+            name = "$STR_TheBurningRain_Status_Freezing";
             image = "z\misery\addons\icons\data\thermometer_snowflake_ca.paa";
-            description = "- You are freezing...";
+            description = "$STR_TheBurningRain_Desc_Freezing";
             // Range: Lower than -0.5 down to -0.75
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v < -0.5 && _v >= -0.75";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v >= -0.5 || _v < -0.75";
         };
         class HypothermicRisk {
-            name = "Hypothermia risk";
+            name = "$STR_TheBurningRain_Status_HypothermiaRisk";
             image = "z\misery\addons\icons\data\thermometer_snowflake_ca.paa";
-            description = "- You are at risk of hypothermia...";
+            description = "$STR_TheBurningRain_Desc_HypothermiaRisk";
             // Range: Lower than -0.75 but not yet -1.0
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v < -0.75 && _v > -1";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v >= -0.75 || _v <= -1";
         };
         class Hypothermia {
-            name = "Hypothermic";
+            name = "$STR_TheBurningRain_Status_Hypothermic";
             image = "z\misery\addons\icons\data\thermometer_snowflake_ca.paa";
-            description = "- You are hypothermic...";
+            description = "$STR_TheBurningRain_Desc_Hypothermic";
             // Range: Exactly -1.0 or lower
             showCondition = "player getVariable ['misery_temperature_exposure', 0] <= -1";
             removeCondition = "player getVariable ['misery_temperature_exposure', 0] > -1";
         };
         class Warm {
-            name = "Warm";
+            name = "$STR_TheBurningRain_Status_Warm";
             image = "z\misery\addons\icons\data\thermometer_sun_ca.paa";
-            description = "- You are feeling warm...";
+            description = "$STR_TheBurningRain_Desc_Warm";
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v > 0.0005 && _v <= 0.25";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v <= 0 || _v > 0.25";
         };
         class Hot {
-            name = "Hot";
+            name = "$STR_TheBurningRain_Status_Hot";
             image = "z\misery\addons\icons\data\thermometer_sun_ca.paa";
-            description = "- You are feeling hot...";
+            description = "$STR_TheBurningRain_Desc_Hot";
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v > 0.25 && _v <= 0.5";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v <= 0.25 || _v > 0.5";
         };
         class Sweating {
-            name = "Overheating";
+            name = "$STR_TheBurningRain_Status_Overheating";
             image = "z\misery\addons\icons\data\thermometer_sun_ca.paa";
-            description = "- You are overheating...";
+            description = "$STR_TheBurningRain_Desc_Overheating";
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v > 0.5 && _v <= 0.75";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v <= 0.5 || _v > 0.75";
         };
         class HyperthermiaRisk {
-            name = "Heatstroke Risk";
+            name = "$STR_TheBurningRain_Status_HeatstrokeRisk";
             image = "z\misery\addons\icons\data\thermometer_sun_ca.paa";
-            description = "- You are at risk of heatstroke...";
+            description = "$STR_TheBurningRain_Desc_HeatstrokeRisk";
             showCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v > 0.75 && _v < 1";
             removeCondition = "private _v = player getVariable ['misery_temperature_exposure', 0]; _v <= 0.75 || _v >= 1";
         };
         class Hyperthermia {
-            name = "Heatstroke";
+            name = "$STR_TheBurningRain_Status_Heatstroke";
             image = "z\misery\addons\icons\data\thermometer_sun_ca.paa";
-            description = "- You have heatstroke...";
+            description = "$STR_TheBurningRain_Desc_Heatstroke";
             showCondition = "player getVariable ['misery_temperature_exposure', 0] >= 1";
             removeCondition = "player getVariable ['misery_temperature_exposure', 0] < 1";
         };
         class Damp {
-            name = "Damp";
+            name = "$STR_TheBurningRain_Status_Damp";
             image = "z\misery\addons\icons\data\droplet_ca.paa";
-            description = "- Your clothes are slightly damp...";
+            description = "$STR_TheBurningRain_Desc_Damp";
             // Range: 0.01 to 0.25
             showCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v > 0 && _v <= 0.25";
             removeCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v <= 0 || _v > 0.25";
         };
         class Wet {
-            name = "Wet";
+            name = "$STR_TheBurningRain_Status_Wet";
             image = "z\misery\addons\icons\data\droplet_ca.paa";
-            description = "- Your clothes are wet...";
+            description = "$STR_TheBurningRain_Desc_Wet";
             // Range: 0.26 to 0.50
             showCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v > 0.25 && _v <= 0.5";
             removeCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v <= 0.25 || _v > 0.5";
         };
         class Soaked {
-            name = "Soaked";
+            name = "$STR_TheBurningRain_Status_Soaked";
             image = "z\misery\addons\icons\data\droplet_ca.paa";
-            description = "- Your clothes are soaking wet...";
+            description = "$STR_TheBurningRain_Desc_Soaked";
             // Range: 0.51 to 0.75
             showCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v > 0.5 && _v <= 0.75";
             removeCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v <= 0.5 || _v > 0.75";
         };
         class Drenched {
-            name = "Drenched";
+            name = "$STR_TheBurningRain_Status_Drenched";
             image = "z\misery\addons\icons\data\droplet_ca.paa";
-            description = "- You are drenched to the bone...";
+            description = "$STR_TheBurningRain_Desc_Drenched";
             // Range: 0.76 to 0.99
             showCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v > 0.75 && _v < 1";
             removeCondition = "private _v = player getVariable ['misery_temperature_wetness', 0]; _v <= 0.75 || _v >= 1";
         };
         class Saturated {
-            name = "Waterlogged";
+            name = "$STR_TheBurningRain_Status_Waterlogged";
             image = "z\misery\addons\icons\data\droplet_ca.paa";
-            description = "- Your gear is heavy and saturated...";
+            description = "$STR_TheBurningRain_Desc_Waterlogged";
             // Range: 1.0 (Maximum)
             showCondition = "player getVariable ['misery_temperature_wetness', 0] >= 1";
             removeCondition = "player getVariable ['misery_temperature_wetness', 0] < 1";
         };
         class Tremor {
-            name = "Tremor";
+            name = "$STR_TheBurningRain_Status_Tremor";
             image = "z\misery\addons\icons\data\brain_circuit_ca.paa";
-            description = "- You're suffering from uncontrollable shaking...";
+            description = "$STR_TheBurningRain_Desc_Tremor";
             // Range: 1.0 (Maximum)
             showCondition = "player getVariable ['misery_medical_tremor', false]";
             removeCondition = "!(player getVariable ['misery_medical_tremor', false])";

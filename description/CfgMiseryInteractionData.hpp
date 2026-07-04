@@ -127,6 +127,49 @@ class CfgMisery_InteractionData {
         code = "if ([misery_survival_turbidWaterChance] call misery_common_fnc_rollChance) then {[0.01, 'parasites'] call misery_common_fnc_addStatusModifier}"; // Raw SQF override (optional)
         feedback[] = {};
     };
+    // Tobacco
+    class misery_cigarettePack { // Item classname
+        category = "$STR_TheBurningRain_Category_Tobacco"; // Category of item
+        delay = 0; // Delay before processing
+        hunger = 0; // Affects MiseryHunger
+        thirst = 0; // Affects MiseryThirst
+        energyDeficit = 0; // Affects energyDeficit (sleepiness)
+        exposure = 0; // Affects exposure
+        radiation = 0; // Affects radiation
+        infection = 0; // Affects infection
+        parasites = 0; // Affects parasites
+        toxicity = 0; // Affects toxicity
+        psychosis = 0; // Affects psychosis
+        maskBlocksUse = 1; // Requires gas mask (1 blocks without)
+        requiresCanOpener = 0; // Requires can opener/tool
+        removeOnUse = 1; // Remove item after use
+        replacement = ""; // Replacement object for magazine object once depleted
+        sound = ""; // Sound to play
+        animation = "";
+        code = "[] call misery_tobacco_fnc_cigarettes"; // Raw SQF override (optional)
+        feedback[] = {};
+    };
+    class misery_cigar { // Item classname
+        category = "$STR_TheBurningRain_Category_Tobacco"; // Category of item
+        delay = 0; // Delay before processing
+        hunger = 0; // Affects MiseryHunger
+        thirst = 0; // Affects MiseryThirst
+        energyDeficit = 0; // Affects energyDeficit (sleepiness)
+        exposure = 0; // Affects exposure
+        radiation = 0; // Affects radiation
+        infection = 0; // Affects infection
+        parasites = 0; // Affects parasites
+        toxicity = 0; // Affects toxicity
+        psychosis = 0; // Affects psychosis
+        maskBlocksUse = 1; // Requires gas mask (1 blocks without)
+        requiresCanOpener = 0; // Requires can opener/tool
+        removeOnUse = 1; // Remove item after use
+        replacement = ""; // Replacement object for magazine object once depleted
+        sound = ""; // Sound to play
+        animation = "";
+        code = "[] call misery_tobacco_fnc_cigar"; // Raw SQF override (optional)
+        feedback[] = {};
+    };
     // Coffee
     class misery_coffeeBrewed { // Item classname
         category = "$STR_TheBurningRain_Category_Drink"; // Category of item
