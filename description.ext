@@ -13,8 +13,6 @@ minPlayerDistance = 350;
 
 cba_settings_hasSettingsFile = 1;
 
-#include "description\CfgMiseryRadioData.hpp"
-
 #include "modules\grad-fortifications\grad_fortifications.hpp"
 
 class RscTitles {
@@ -163,6 +161,7 @@ class CfgGradPersistence {
 
 #include "modules\grad-fortifications\description\CfgGRADFortData.hpp"
 
+#include "description\CfgMiseryRadioData.hpp"
 #include "description\CfgMiseryCraftingData.hpp"
 #include "description\CfgMiseryCookingData.hpp"
 #include "description\CfgMiseryHydrologyData.hpp"

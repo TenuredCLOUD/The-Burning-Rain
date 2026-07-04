@@ -1,7 +1,7 @@
 class CfgMisery_InteractionData {
     // Water bottles
     class misery_waterBottle_Purified { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.25; // Affects MiseryThirst
@@ -22,7 +22,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_waterBottle_Clean { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.25; // Affects MiseryThirst
@@ -43,7 +43,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_waterBottle_Dirty { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.25; // Affects MiseryThirst
@@ -63,9 +63,73 @@ class CfgMisery_InteractionData {
         code = "if ([misery_survival_turbidWaterChance] call misery_common_fnc_rollChance) then {[0.01, 'parasites'] call misery_common_fnc_addStatusModifier}"; // Raw SQF override (optional)
         feedback[] = {};
     };
+    // Water Canister
+    class misery_waterJerryCan_Purified { // Item classname
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
+        delay = 15; // Delay before processing
+        hunger = 0; // Affects MiseryHunger
+        thirst = 0.25; // Affects MiseryThirst
+        energyDeficit = 0; // Affects energyDeficit (sleepiness)
+        exposure = 0; // Affects exposure
+        radiation = 0; // Affects radiation
+        infection = 0; // Affects infection
+        parasites = 0; // Affects parasites
+        toxicity = 0; // Affects toxicity
+        psychosis = 0; // Affects psychosis
+        maskBlocksUse = 1; // Requires gas mask (1 blocks without)
+        requiresCanOpener = 0; // Requires can opener/tool
+        removeOnUse = 1; // Remove item after use
+        replacement = "misery_waterJerryCan_Empty"; // Replacement object for magazine object once depleted
+        sound = "z\misery\addons\audio\sounds\items\drink.ogg"; // Sound to play
+        animation = "";
+        code = ""; // Raw SQF override (optional)
+        feedback[] = {};
+    };
+    class misery_waterJerryCan_Clean { // Item classname
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
+        delay = 15; // Delay before processing
+        hunger = 0; // Affects MiseryHunger
+        thirst = 0.25; // Affects MiseryThirst
+        energyDeficit = 0; // Affects energyDeficit (sleepiness)
+        exposure = 0; // Affects exposure
+        radiation = 0.0025; // Affects radiation
+        infection = 0; // Affects infection
+        parasites = 0; // Affects parasites
+        toxicity = 0; // Affects toxicity
+        psychosis = 0; // Affects psychosis
+        maskBlocksUse = 1; // Requires gas mask (1 blocks without)
+        requiresCanOpener = 0; // Requires can opener/tool
+        removeOnUse = 1; // Remove item after use
+        replacement = "misery_waterJerryCan_Empty"; // Replacement object for magazine object once depleted
+        sound = "z\misery\addons\audio\sounds\items\drink.ogg"; // Sound to play
+        animation = "";
+        code = ""; // Raw SQF override (optional)
+        feedback[] = {};
+    };
+    class misery_waterJerryCan_Dirty { // Item classname
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
+        delay = 15; // Delay before processing
+        hunger = 0; // Affects MiseryHunger
+        thirst = 0.25; // Affects MiseryThirst
+        energyDeficit = 0; // Affects energyDeficit (sleepiness)
+        exposure = 0; // Affects exposure
+        radiation = 0.005; // Affects radiation
+        infection = 0; // Affects infection
+        parasites = 0; // Affects parasites
+        toxicity = 0; // Affects toxicity
+        psychosis = 0; // Affects psychosis
+        maskBlocksUse = 1; // Requires gas mask (1 blocks without)
+        requiresCanOpener = 0; // Requires can opener/tool
+        removeOnUse = 1; // Remove item after use
+        replacement = "misery_waterJerryCan_Empty"; // Replacement object for magazine object once depleted
+        sound = "z\misery\addons\audio\sounds\items\drink.ogg"; // Sound to play
+        animation = "";
+        code = "if ([misery_survival_turbidWaterChance] call misery_common_fnc_rollChance) then {[0.01, 'parasites'] call misery_common_fnc_addStatusModifier}"; // Raw SQF override (optional)
+        feedback[] = {};
+    };
     // Coffee
     class misery_coffeeBrewed { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.10; // Affects MiseryThirst
@@ -87,7 +151,7 @@ class CfgMisery_InteractionData {
     };
     // Canteen
     class misery_canteen_Purified { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.25; // Affects MiseryThirst
@@ -108,7 +172,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_canteen_Clean { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.25; // Affects MiseryThirst
@@ -129,7 +193,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_canteen_Dirty { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.25; // Affects MiseryThirst
@@ -151,7 +215,7 @@ class CfgMisery_InteractionData {
     };
     // Soda / Energy drink
     class misery_energyDrink { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.15; // Affects MiseryThirst
@@ -172,7 +236,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_soda_1 { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.15; // Affects MiseryThirst
@@ -193,7 +257,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_soda_2 { // Item classname
-        category = "Drink"; // Category of item
+        category = "$STR_TheBurningRain_Category_Drink"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.15; // Affects MiseryThirst
@@ -215,7 +279,7 @@ class CfgMisery_InteractionData {
     };
     // Alcohol
     class misery_wolfBeer { // Item classname
-        category = "Alcohol"; // Category of item
+        category = "$STR_TheBurningRain_Category_Alcohol"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.15; // Affects MiseryThirst
@@ -236,7 +300,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_vodka { // Item classname
-        category = "Alcohol"; // Category of item
+        category = "$STR_TheBurningRain_Category_Alcohol"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0.15; // Affects MiseryThirst
@@ -258,7 +322,7 @@ class CfgMisery_InteractionData {
     };
     // Food
     class misery_cookedFish { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.25; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -278,7 +342,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_cookedMeat { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.25; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -298,7 +362,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_rawFish { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.25; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -318,7 +382,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_rawMeat { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.25; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -338,7 +402,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_rice { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.15; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -358,7 +422,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_cereal { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.15; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -378,7 +442,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_orange { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.05; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -398,7 +462,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_powderedMilk { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.1; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -418,7 +482,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_cannedBacon { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.25; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -438,7 +502,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_bakedBeans { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.30; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -459,7 +523,7 @@ class CfgMisery_InteractionData {
     };
     // ACE MRE's
     class ACE_Humanitarian_Ration { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.35; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -479,7 +543,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_BeefStew { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.7; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -499,7 +563,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_ChickenTikkaMasala { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.5; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -519,7 +583,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_ChickenHerbDumplings { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.7; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -539,7 +603,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_CreamChickenSoup { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.35; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -559,7 +623,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_CreamTomatoSoup { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.35; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -579,7 +643,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_LambCurry { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.4; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -599,7 +663,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_MeatballsPasta { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.7; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -619,7 +683,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class ACE_MRE_SteakVegetables { // Item classname
-        category = "Food"; // Category of item
+        category = "$STR_TheBurningRain_Category_Food"; // Category of item
         delay = 15; // Delay before processing
         hunger = 0.9; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -640,7 +704,7 @@ class CfgMisery_InteractionData {
     };
     // Saw fuel
     class misery_sawFuel { // Item classname
-        category = "Tools"; // Category of item
+        category = "$STR_TheBurningRain_Category_Tools"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -661,7 +725,7 @@ class CfgMisery_InteractionData {
     };
     // Fire crafting
     class misery_matchBox { // Item classname
-        category = "Fire Crafting"; // Category of item
+        category = "$STR_TheBurningRain_Category_FireCrafting"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -681,7 +745,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_lighter { // Item classname
-        category = "Fire Crafting"; // Category of item
+        category = "$STR_TheBurningRain_Category_FireCrafting"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -702,7 +766,7 @@ class CfgMisery_InteractionData {
     };
     // Temperature
     class misery_thermalRegulationKit { // Item classname
-        category = "Survival Kits"; // Category of item
+        category = "$STR_TheBurningRain_Category_SurvivalKits"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -723,7 +787,7 @@ class CfgMisery_InteractionData {
     };
     // Purification tablets
     class misery_pureTablets { // Item classname
-        category = "Purification"; // Category of item
+        category = "$STR_TheBurningRain_Category_Purification"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -744,7 +808,7 @@ class CfgMisery_InteractionData {
     };
     // Thermal packs
     class misery_heatpack { // Item classname
-        category = "Thermal"; // Category of item
+        category = "$STR_TheBurningRain_Category_Thermal"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst
@@ -764,7 +828,7 @@ class CfgMisery_InteractionData {
         feedback[] = {};
     };
     class misery_coldpack { // Item classname
-        category = "Thermal"; // Category of item
+        category = "$STR_TheBurningRain_Category_Thermal"; // Category of item
         delay = 0; // Delay before processing
         hunger = 0; // Affects MiseryHunger
         thirst = 0; // Affects MiseryThirst

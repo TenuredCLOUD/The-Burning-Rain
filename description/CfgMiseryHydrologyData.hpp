@@ -7,4 +7,8 @@ class CfgMisery_HydrologyData {
         requiredItem = "misery_canteen_Empty";
         fillingTime = 14;
     };
+    class misery_waterJerryCan_Dirty {
+        requiredItem = "misery_waterJerryCan_Empty";
+        fillingTime = 30;
+    };
 };

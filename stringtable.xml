@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TheBurningRain">
+    <Package name="Main">
+        <Key ID="STR_TheBurningRain_Category_Drink">
+            <English>Drink</English>
+            <Czech>Pití</Czech>
+            <French>Boisson</French>
+            <Spanish>Bebida</Spanish>
+            <Italian>Bevanda</Italian>
+            <Polish>Napoje</Polish>
+            <Portuguese>Bebida</Portuguese>
+            <Russian>Питье</Russian>
+            <German>Getränk</German>
+            <Korean>음료</Korean>
+            <Japanese>飲み物</Japanese>
+            <Chinese>飲料</Chinese>
+            <Chinesesimp>饮料</Chinesesimp>
+            <Turkish>İçecek</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Food">
+            <English>Food</English>
+            <Czech>Jídlo</Czech>
+            <French>Nourriture</French>
+            <Spanish>Comida</Spanish>
+            <Italian>Cibo</Italian>
+            <Polish>Jedzenie</Polish>
+            <Portuguese>Comida</Portuguese>
+            <Russian>Еда</Russian>
+            <German>Essen</German>
+            <Korean>음식</Korean>
+            <Japanese>食べ物</Japanese>
+            <Chinese>食物</Chinese>
+            <Chinesesimp>食物</Chinesesimp>
+            <Turkish>Yiyecek</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Alcohol">
+            <English>Alcohol</English>
+            <Czech>Alkohol</Czech>
+            <French>Alcool</French>
+            <Spanish>Alcohol</Spanish>
+            <Italian>Alcol</Italian>
+            <Polish>Alkohol</Polish>
+            <Portuguese>Álcool</Portuguese>
+            <Russian>Алкоголь</Russian>
+            <German>Alkohol</German>
+            <Korean>알코올</Korean>
+            <Japanese>アルコール</Japanese>
+            <Chinese>酒精</Chinese>
+            <Chinesesimp>酒精</Chinesesimp>
+            <Turkish>Alkol</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Tools">
+            <English>Tools</English>
+            <Czech>Nástroje</Czech>
+            <French>Outils</French>
+            <Spanish>Herramientas</Spanish>
+            <Italian>Strumenti</Italian>
+            <Polish>Narzędzia</Polish>
+            <Portuguese>Ferramentas</Portuguese>
+            <Russian>Инструменты</Russian>
+            <German>Werkzeuge</German>
+            <Korean>도구</Korean>
+            <Japanese>ツール</Japanese>
+            <Chinese>工具</Chinese>
+            <Chinesesimp>工具</Chinesesimp>
+            <Turkish>Aletler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_FireCrafting">
+            <English>Fire Crafting</English>
+            <Czech>Rozdělávání ohně</Czech>
+            <French>Création de feu</French>
+            <Spanish>Creación de fuego</Spanish>
+            <Italian>Creazione del fuoco</Italian>
+            <Polish>Rozpalanie ognia</Polish>
+            <Portuguese>Criação de fogo</Portuguese>
+            <Russian>Разведение огня</Russian>
+            <German>Feuer machen</German>
+            <Korean>불 피우기</Korean>
+            <Japanese>火起こし</Japanese>
+            <Chinese>生火工具</Chinese>
+            <Chinesesimp>生火工具</Chinesesimp>
+            <Turkish>Ateş Yakma</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_SurvivalKits">
+            <English>Survival Kits</English>
+            <Czech>Sady pro přežití</Czech>
+            <French>Kits de survie</French>
+            <Spanish>Kits de supervivencia</Spanish>
+            <Italian>Kit di sopravvivenza</Italian>
+            <Polish>Zestawy przetrwania</Polish>
+            <Portuguese>Kits de sobrevivência</Portuguese>
+            <Russian>Наборы для выживания</Russian>
+            <German>Überlebensausrüstung</German>
+            <Korean>생존 키트</Korean>
+            <Japanese>サバイバルキット</Japanese>
+            <Chinese>生存套件</Chinese>
+            <Chinesesimp>生存套件</Chinesesimp>
+            <Turkish>Hayatta Kalma Kitleri</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Purification">
+            <English>Purification</English>
+            <Czech>Čištění vody</Czech>
+            <French>Purification</French>
+            <Spanish>Purificación</Spanish>
+            <Italian>Purificazione</Italian>
+            <Polish>Oczyszczanie</Polish>
+            <Portuguese>Purificação</Portuguese>
+            <Russian>Очистка</Russian>
+            <German>Reinigung</German>
+            <Korean>정수</Korean>
+            <Japanese>浄화</Japanese>
+            <Chinese>過濾/爭化</Chinese>
+            <Chinesesimp>过滤/净化</Chinesesimp>
+            <Turkish>Arındırma</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Thermal">
+            <English>Thermal</English>
+            <Czech>Termoizolace</Czech>
+            <French>Thermique</French>
+            <Spanish>Térmico</Spanish>
+            <Italian>Termico</Italian>
+            <Polish>Termika</Polish>
+            <Portuguese>Térmico</Portuguese>
+            <Russian>Тепловые приборы</Russian>
+            <German>Thermik</German>
+            <Korean>열선/보온</Korean>
+            <Japanese>サーマル</Japanese>
+            <Chinese>保溫/熱能</Chinese>
+            <Chinesesimp>保温/热能</Chinesesimp>
+            <Turkish>Termal</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_General">
+            <English>General Trader</English>
+            <Czech>Všeobecný obchodník</Czech>
+            <French>Commerçant général</French>
+            <Spanish>Comerciante general</Spanish>
+            <Italian>Mercante generale</Italian>
+            <Polish>Handlarz ogólny</Polish>
+            <Portuguese>Comerciante geral</Portuguese>
+            <Russian>Торговец разным</Russian>
+            <German>Allgemeiner Händler</German>
+            <Korean>일반 상인</Korean>
+            <Japanese>総合商人</Japanese>
+            <Chinese>通用商人</Chinese>
+            <Chinesesimp>通用商人</Chinesesimp>
+            <Turkish>Genel Tüccar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_Specialist">
+            <English>Specialist</English>
+            <Czech>Specialista</Czech>
+            <French>Spécialiste</French>
+            <Spanish>Especialista</Spanish>
+            <Italian>Specialista</Italian>
+            <Polish>Specjalista</Polish>
+            <Portuguese>Especialista</Portuguese>
+            <Russian>Специалист</Russian>
+            <German>Spezialist</German>
+            <Korean>전문가</Korean>
+            <Japanese>スペシャリスト</Japanese>
+            <Chinese>专家商人</Chinese>
+            <Chinesesimp>专家商人</Chinesesimp>
+            <Turkish>Uzman</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_Researcher">
+            <English>Researcher</English>
+            <Czech>Vědec</Czech>
+            <French>Chercheur</French>
+            <Spanish>Investigador</Spanish>
+            <Italian>Ricercatore</Italian>
+            <Polish>Badacz</Polish>
+            <Portuguese>Pesquisador</Portuguese>
+            <Russian>Исследователь</Russian>
+            <German>Forscher</German>
+            <Korean>연구원</Korean>
+            <Japanese>研究員</Japanese>
+            <Chinese>研究员</Chinese>
+            <Chinesesimp>研究员</Chinesesimp>
+            <Turkish>Araştırmacı</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_MedicalSupplies">
+            <English>Medical supplies</English>
+            <Czech>Zdravotnické potřeby</Czech>
+            <French>Fournitures médicales</French>
+            <Spanish>Suministros médicos</Spanish>
+            <Italian>Forniture mediche</Italian>
+            <Polish>Artykuły medyczne</Polish>
+            <Portuguese>Suprimentos médicos</Portuguese>
+            <Russian>Медикаменты</Russian>
+            <German>Medizinischer Bedarf</German>
+            <Korean>의료품</Korean>
+            <Japanese>医療品</Japanese>
+            <Chinese>医疗用品</Chinese>
+            <Chinesesimp>医疗用品</Chinesesimp>
+            <Turkish>Tıbbi Malzemeler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Status_Blacklisted">
+            <English>Blacklisted</English>
+            <Czech>Na černé listině</Czech>
+            <French>Liste noire</French>
+            <Spanish>En la lista negra</Spanish>
+            <Italian>Nella lista nera</Italian>
+            <Polish>Na czarnej liście</Polish>
+            <Portuguese>Lista negra</Portuguese>
+            <Russian>В чёрном списке</Russian>
+            <German>Auf der Blacklist</German>
+            <Korean>블랙리스트 등록됨</Korean>
+            <Japanese>ブラックリスト</Japanese>
+            <Chinese>黑名單</Chinese>
+            <Chinesesimp>黑名单</Chinesesimp>
+            <Turkish>Kara Listede</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_Prospector">
+            <English>Prospector</English>
+            <Czech>Zlatokop</Czech>
+            <French>Prospecteur</French>
+            <Spanish>Prospector</Spanish>
+            <Italian>Prospettore</Italian>
+            <Polish>Poszukiwacz</Polish>
+            <Portuguese>Garimpeiro</Portuguese>
+            <Russian>Старатель</Russian>
+            <German>Prospektor</German>
+            <Korean>개척자</Korean>
+            <Japanese>探鉱者</Japanese>
+            <Chinese>勘探员</Chinese>
+            <Chinesesimp>勘探员</Chinesesimp>
+            <Turkish>Arayıcı</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_Mechanic">
+            <English>Mechanic</English>
+            <Czech>Mechanik</Czech>
+            <French>Mécanicien</French>
+            <Spanish>Mecánico</Spanish>
+            <Italian>Meccanico</Italian>
+            <Polish>Mechanik</Polish>
+            <Portuguese>Mecânico</Portuguese>
+            <Russian>Механик</Russian>
+            <German>Mechaniker</German>
+            <Korean>정비공</Korean>
+            <Japanese>メカニック</Japanese>
+            <Chinese>机械师</Chinese>
+            <Chinesesimp>机械师</Chinesesimp>
+            <Turkish>Tamirci</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_BaseItems">
+            <English>Base Items Trader</English>
+            <Czech>Obchodník se základními předměty</Czech>
+            <French>Marchand d'objets de base</French>
+            <Spanish>Comerciante de objetos base</Spanish>
+            <Italian>Mercante di oggetti base</Italian>
+            <Polish>Handlarz materiałami bazowymi</Polish>
+            <Portuguese>Comerciante de itens básicos</Portuguese>
+            <Russian>Торговец базовыми вещами</Russian>
+            <German>Händler für Basisgegenstände</German>
+            <Korean>기본 아이템 상인</Korean>
+            <Japanese>基本アイテム商人</Japanese>
+            <Chinese>基础物资商人</Chinese>
+            <Chinesesimp>基础物资商人</Chinesesimp>
+            <Turkish>Temel Eşya Tüccarı</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_Gear">
+            <English>Gear Trader</English>
+            <Czech>Obchodník s vybavením</Czech>
+            <French>Marchand d'équipement</French>
+            <Spanish>Comerciante de equipo</Spanish>
+            <Italian>Mercante di equipaggiamento</Italian>
+            <Polish>Handlarz wyposażeniem</Polish>
+            <Portuguese>Comerciante de equipamentos</Portuguese>
+            <Russian>Торговец снаряжением</Russian>
+            <German>Ausrüstungshändler</German>
+            <Korean>장비 상인</Korean>
+            <Japanese>装備商人</Japanese>
+            <Chinese>装备商人</Chinese>
+            <Chinesesimp>装备商人</Chinesesimp>
+            <Turkish>Teçhizat Tüccarı</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Trader_ArmsDealer">
+            <English>Arms Dealer</English>
+            <Czech>Obchodník se zbraněmi</Czech>
+            <French>Marchand d'armes</French>
+            <Spanish>Traficante de armas</Spanish>
+            <Italian>Mercante d'armi</Italian>
+            <Polish>Handlarz bronią</Polish>
+            <Portuguese>Traficante de armas</Portuguese>
+            <Russian>Торговец оружием</Russian>
+            <German>Waffenhändler</German>
+            <Korean>무기상</Korean>
+            <Japanese>武器商人</Japanese>
+            <Chinese>军火商</Chinese>
+            <Chinesesimp>军火商</Chinesesimp>
+            <Turkish>Silah Tüccarı</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Items">
+            <English>Items</English>
+            <Czech>Předměty</Czech>
+            <French>Objets</French>
+            <Spanish>Objetos</Spanish>
+            <Italian>Oggetti</Italian>
+            <Polish>Przedmioty</Polish>
+            <Portuguese>Itens</Portuguese>
+            <Russian>Предметы</Russian>
+            <German>Gegenstände</German>
+            <Korean>아이템</Korean>
+            <Japanese>アイテム</Japanese>
+            <Chinese>物品</Chinese>
+            <Chinesesimp>物品</Chinesesimp>
+            <Turkish>Eşyalar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Survival">
+            <English>Survival</English>
+            <Czech>Přežití</Czech>
+            <French>Survie</French>
+            <Spanish>Supervivencia</Spanish>
+            <Italian>Sopravvivenza</Italian>
+            <Polish>Przetrwanie</Polish>
+            <Portuguese>Sobrevivência</Portuguese>
+            <Russian>Выживание</Russian>
+            <German>Überleben</German>
+            <Korean>생존</Korean>
+            <Japanese>サバイバル</Japanese>
+            <Chinese>生存</Chinese>
+            <Chinesesimp>生存</Chinesesimp>
+            <Turkish>Hayatta Kalma</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_IgnitionSource">
+            <English>Ignition Source</English>
+            <Czech>Zdroj zapálení</Czech>
+            <French>Source d'allumage</French>
+            <Spanish>Fuente de ignición</Spanish>
+            <Italian>Fonte di accensione</Italian>
+            <Polish>Źródło ognia</Polish>
+            <Portuguese>Fonte de ignição</Portuguese>
+            <Russian>Источник розжига</Russian>
+            <German>Zündquelle</German>
+            <Korean>점화원</Korean>
+            <Japanese>点화源</Japanese>
+            <Chinese>點火源</Chinese>
+            <Chinesesimp>点火源</Chinesesimp>
+            <Turkish>Ateşleyici Kaynak</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Tobacco">
+            <English>Tobacco</English>
+            <Czech>Tabák</Czech>
+            <French>Tabac</French>
+            <Spanish>Tabaco</Spanish>
+            <Italian>Tabacco</Italian>
+            <Polish>Tytoń</Polish>
+            <Portuguese>Tabaco</Portuguese>
+            <Russian>Табак</Russian>
+            <German>Tabak</German>
+            <Korean>담배</Korean>
+            <Japanese>タバコ</Japanese>
+            <Chinese>菸草</Chinese>
+            <Chinesesimp>烟草</Chinesesimp>
+            <Turkish>Tütün</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Fishing">
+            <English>Fishing</English>
+            <Czech>Rybaření</Czech>
+            <French>Pêche</French>
+            <Spanish>Pesca</Spanish>
+            <Italian>Pesca</Italian>
+            <Polish>Wędkarstwo</Polish>
+            <Portuguese>Pesca</Portuguese>
+            <Russian>Рыбалка</Russian>
+            <German>Angeln</German>
+            <Korean>낚시</Korean>
+            <Japanese>釣り</Japanese>
+            <Chinese>釣魚</Chinese>
+            <Chinesesimp>钓鱼</Chinesesimp>
+            <Turkish>Balıkçılık</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Bait">
+            <English>Bait</English>
+            <Czech>Návnada</Czech>
+            <French>Appât</French>
+            <Spanish>Carnada</Spanish>
+            <Italian>Esca</Italian>
+            <Polish>Przynęta</Polish>
+            <Portuguese>Isca</Portuguese>
+            <Russian>Наживка</Russian>
+            <German>Köder</German>
+            <Korean>미끼</Korean>
+            <Japanese>餌</Japanese>
+            <Chinese>魚餌</Chinese>
+            <Chinesesimp>鱼饵</Chinesesimp>
+            <Turkish>Yem</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Medicine">
+            <English>Medicine</English>
+            <Czech>Medicina</Czech>
+            <French>Médicament</French>
+            <Spanish>Medicina</Spanish>
+            <Italian>Medicina</Italian>
+            <Polish>Medycyna</Polish>
+            <Portuguese>Medicina</Portuguese>
+            <Russian>Медицина</Russian>
+            <German>Medizin</German>
+            <Korean>의약품</Korean>
+            <Japanese>医薬品</Japanese>
+            <Chinese>醫療藥品</Chinese>
+            <Chinesesimp>医疗药品</Chinesesimp>
+            <Turkish>Tıp</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_SpecialtyEquipment">
+            <English>Specialty Equipment</English>
+            <Czech>Specializované vybavení</Czech>
+            <French>Équipement spécialisé</French>
+            <Spanish>Equipo especializado</Spanish>
+            <Italian>Equipaggiamento speciale</Italian>
+            <Polish>Specjalistyczny sprzęt</Polish>
+            <Portuguese>Equipamento especializado</Portuguese>
+            <Russian>Спецоборудование</Russian>
+            <German>Spezialausrüstung</German>
+            <Korean>특수 장비</Korean>
+            <Japanese>特殊装備</Japanese>
+            <Chinese>特種設備</Chinese>
+            <Chinesesimp>特种设备</Chinesesimp>
+            <Turkish>Özel Ekipman</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Rarity">
+            <English>Rarity</English>
+            <Czech>Vzácnost</Czech>
+            <French>Rareté</French>
+            <Spanish>Rarity</Spanish>
+            <Italian>Rarità</Italian>
+            <Polish>Rzadkość</Polish>
+            <Portuguese>Raridade</Portuguese>
+            <Russian>Редкость</Russian>
+            <German>Seltenheit</German>
+            <Korean>희귀도</Korean>
+            <Japanese>レア度</Japanese>
+            <Chinese>稀有度</Chinese>
+            <Chinesesimp>稀有度</Chinesesimp>
+            <Turkish>Nadirlik</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_ResearchEquipment">
+            <English>Research Equipment</English>
+            <Czech>Výzkumné vybavení</Czech>
+            <French>Équipement de recherche</French>
+            <Spanish>Equipo de investigación</Spanish>
+            <Italian>Equipaggiamento da ricerca</Italian>
+            <Polish>Sprzęt badawczy</Polish>
+            <Portuguese>Equipamento de pesquisa</Portuguese>
+            <Russian>Исследовательское оборудование</Russian>
+            <German>Forschungsausrüstung</German>
+            <Korean>연구 장비</Korean>
+            <Japanese>研究設備</Japanese>
+            <Chinese>研究設備</Chinese>
+            <Chinesesimp>研究设备</Chinesesimp>
+            <Turkish>Araştırma Ekipmanı</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_WoundTreatment">
+            <English>Wound Treatment</English>
+            <Czech>Ošetření ran</Czech>
+            <French>Traitement des plaies</French>
+            <Spanish>Tratamiento de heridas</Spanish>
+            <Italian>Trattamento ferite</Italian>
+            <Polish>Leczenie ran</Polish>
+            <Portuguese>Tratamento de feridas</Portuguese>
+            <Russian>Лечение ран</Russian>
+            <German>Wundversorgung</German>
+            <Korean>상처 치료</Korean>
+            <Japanese>傷の手当て</Japanese>
+            <Chinese>傷口治療</Chinese>
+            <Chinesesimp>伤口治疗</Chinesesimp>
+            <Turkish>Yara Tedavisi</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_MedicalFluids">
+            <English>Medical Fluids</English>
+            <Czech>Lékařské tekutiny</Czech>
+            <French>Fluides médicaux</French>
+            <Spanish>Fluidos médicos</Spanish>
+            <Italian>Fluidi medici</Italian>
+            <Polish>Płyny medyczne</Polish>
+            <Portuguese>Fluidos médicos</Portuguese>
+            <Russian>Медицинские растворы</Russian>
+            <German>Medizinische Flüssigkeiten</German>
+            <Korean>의료용 수액</Korean>
+            <Japanese>医療用流体</Japanese>
+            <Chinese>醫療流體</Chinese>
+            <Chinesesimp>医疗流体</Chinesesimp>
+            <Turkish>Tıbbi Sıvılar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Narcotics">
+            <English>Narcotics</English>
+            <Czech>Narkotika</Czech>
+            <French>Narcotiques</French>
+            <Spanish>Narcóticos</Spanish>
+            <Italian>Narcotici</Italian>
+            <Polish>Narkotyki</Polish>
+            <Portuguese>Narcóticos</Portuguese>
+            <Russian>Наркотики</Russian>
+            <German>Narkotika</German>
+            <Korean>마약류</Korean>
+            <Japanese>麻薬</Japanese>
+            <Chinese>麻醉毒品</Chinese>
+            <Chinesesimp>麻醉毒品</Chinesesimp>
+            <Turkish>Narkotikler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Ores">
+            <English>Ores</English>
+            <Czech>Rudy</Czech>
+            <French>Minerais</French>
+            <Spanish>Minerales</Spanish>
+            <Italian>Minerali</Italian>
+            <Polish>Rudy</Polish>
+            <Portuguese>Minérios</Portuguese>
+            <Russian>Руды</Russian>
+            <German>Erze</German>
+            <Korean>광석</Korean>
+            <Japanese>鉱石</Japanese>
+            <Chinese>礦石</Chinese>
+            <Chinesesimp>矿石</Chinesesimp>
+            <Turkish>Cevherler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Ingots">
+            <English>Ingots</English>
+            <Czech>Ingoty</Czech>
+            <French>Lingots</French>
+            <Spanish>Lingotes</Spanish>
+            <Italian>Lingotti</Italian>
+            <Polish>Sztabki</Polish>
+            <Portuguese>Lingotes</Portuguese>
+            <Russian>Слитки</Russian>
+            <German>Barren</German>
+            <Korean>주괴</Korean>
+            <Japanese>インゴット</Japanese>
+            <Chinese>金條/金塊</Chinese>
+            <Chinesesimp>锭/块</Chinesesimp>
+            <Turkish>Külçeler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Fuel">
+            <English>Fuel</English>
+            <Czech>Palivo</Czech>
+            <French>Carburant</French>
+            <Spanish>Combustible</Spanish>
+            <Italian>Carburante</Italian>
+            <Polish>Paliwo</Polish>
+            <Portuguese>Combustível</Portuguese>
+            <Russian>Топливо</Russian>
+            <German>Kraftstoff</German>
+            <Korean>연료</Korean>
+            <Japanese>燃料</Japanese>
+            <Chinese>燃料</Chinese>
+            <Chinesesimp>燃料</Chinesesimp>
+            <Turkish>Yakit</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Fluids">
+            <English>Fluids</English>
+            <Czech>Tekutiny</Czech>
+            <French>Fluides</French>
+            <Spanish>Fluidos</Spanish>
+            <Italian>Fluidi</Italian>
+            <Polish>Płyny</Polish>
+            <Portuguese>Fluidos</Portuguese>
+            <Russian>Жидкости</Russian>
+            <German>Flüssigkeiten</German>
+            <Korean>유체</Korean>
+            <Japanese>液体</Japanese>
+            <Chinese>流體</Chinese>
+            <Chinesesimp>流体</Chinesesimp>
+            <Turkish>Sıvılar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Parts">
+            <English>Parts</English>
+            <Czech>Součástky</Czech>
+            <French>Pièces</French>
+            <Spanish>Piezas</Spanish>
+            <Italian>Parti</Italian>
+            <Polish>Części</Polish>
+            <Portuguese>Peças</Portuguese>
+            <Russian>Детали</Russian>
+            <German>Teile</German>
+            <Korean>부품</Korean>
+            <Japanese>パーツ</Japanese>
+            <Chinese>零件</Chinese>
+            <Chinesesimp>零件</Chinesesimp>
+            <Turkish>Parçalar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Fortifications">
+            <English>Fortifications</English>
+            <Czech>Opevnění</Czech>
+            <French>Fortifications</French>
+            <Spanish>Fortificaciones</Spanish>
+            <Italian>Fortificazioni</Italian>
+            <Polish>Fortyfikacje</Polish>
+            <Portuguese>Fortificações</Portuguese>
+            <Russian>Укрепления</Russian>
+            <German>Befestigungen</German>
+            <Korean>요새화/방어벽</Korean>
+            <Japanese>防衛陣地</Japanese>
+            <Chinese>防禦工事</Chinese>
+            <Chinesesimp>防御工事</Chinesesimp>
+            <Turkish>Tahkimatlar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Power">
+            <English>Power</English>
+            <Czech>Napájení</Czech>
+            <French>Énergie</French>
+            <Spanish>Energía</Spanish>
+            <Italian>Energia</Italian>
+            <Polish>Zasilanie</Polish>
+            <Portuguese>Energia</Portuguese>
+            <Russian>Энергоснабжение</Russian>
+            <German>Stromversorgung</German>
+            <Korean>전력</Korean>
+            <Japanese>電力</Japanese>
+            <Chinese>電力</Chinese>
+            <Chinesesimp>电力</Chinesesimp>
+            <Turkish>Güç</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Lighting">
+            <English>Lighting</English>
+            <Czech>Osvětlení</Czech>
+            <French>Éclairage</French>
+            <Spanish>Iluminación</Spanish>
+            <Italian>Illuminazione</Italian>
+            <Polish>Oświetlenie</Polish>
+            <Portuguese>Iluminação</Portuguese>
+            <Russian>Освещение</Russian>
+            <German>Beleuchtung</German>
+            <Korean>조명</Korean>
+            <Japanese>照明</Japanese>
+            <Chinese>照明</Chinese>
+            <Chinesesimp>照明</Chinesesimp>
+            <Turkish>Aydınlatma</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Communication">
+            <English>Communication</English>
+            <Czech>Komunikace</Czech>
+            <French>Communication</French>
+            <Spanish>Comunicación</Spanish>
+            <Italian>Comunicazione</Italian>
+            <Polish>Komunikacja</Polish>
+            <Portuguese>Comunicação</Portuguese>
+            <Russian>Связь</Russian>
+            <German>Kommunikation</German>
+            <Korean>통신</Korean>
+            <Japanese>通信</Japanese>
+            <Chinese>通信</Chinese>
+            <Chinesesimp>通信</Chinesesimp>
+            <Turkish>İletişim</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Backpacks">
+            <English>Backpacks</English>
+            <Czech>Batohy</Czech>
+            <French>Sacs à dos</French>
+            <Spanish>Mochilas</Spanish>
+            <Italian>Zaini</Italian>
+            <Polish>Plecaki</Polish>
+            <Portuguese>Mochilas</Portuguese>
+            <Russian>Рюкзаки</Russian>
+            <German>Rucksäcke</German>
+            <Korean>배낭</Korean>
+            <Japanese>バックパック</Japanese>
+            <Chinese>背包</Chinese>
+            <Chinesesimp>背包</Chinesesimp>
+            <Turkish>Sırt Çantaları</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Vests">
+            <English>Vests / Plate Carriers</English>
+            <Czech>Vesty / Nosiče plátů</Czech>
+            <French>Gilets / Porte-plaques</French>
+            <Spanish>Chalecos / Portaplacas</Spanish>
+            <Italian>Gillet / Portapiastre</Italian>
+            <Polish>Kamizelki / Nosiarze płyt</Polish>
+            <Portuguese>Coletes / Porta-placas</Portuguese>
+            <Russian>Жилеты / Бронежилеты</Russian>
+            <German>Westen / Plattenträger</German>
+            <Korean>전술 조끼 / 플레이트 캐리어</Korean>
+            <Japanese>ベスト / プレートキャリア</Japanese>
+            <Chinese>戰術背心 / 防彈衣</Chinese>
+            <Chinesesimp>战术背心 / 防弹衣</Chinesesimp>
+            <Turkish>Yelekler / Plaka Taşıyıcılar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Uniforms">
+            <English>Uniforms</English>
+            <Czech>Uniformy</Czech>
+            <French>Uniformes</French>
+            <Spanish>Uniformes</Spanish>
+            <Italian>Uniformi</Italian>
+            <Polish>Uniformy</Polish>
+            <Portuguese>Uniformes</Portuguese>
+            <Russian>Форма</Russian>
+            <German>Uniformen</German>
+            <Korean>군복/제복</Korean>
+            <Japanese>制服</Japanese>
+            <Chinese>制服/軍服</Chinese>
+            <Chinesesimp>制服/军服</Chinesesimp>
+            <Turkish>Üniformalar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Headgear">
+            <English>Headgear</English>
+            <Czech>Pokrývky hlavy</Czech>
+            <French>Casques / Chapeaux</French>
+            <Spanish>Cascos / Gorros</Spanish>
+            <Italian>Copricapi</Italian>
+            <Polish>Nakrycia głowy</Polish>
+            <Portuguese>Capacetes / Bonés</Portuguese>
+            <Russian>Головные уборы</Russian>
+            <German>Kopfbedeckung</German>
+            <Korean>머리장비/헬멧</Korean>
+            <Japanese>ヘッドギア</Japanese>
+            <Chinese>頭盔/頭飾</Chinese>
+            <Chinesesimp>头盔/头饰</Chinesesimp>
+            <Turkish>Başlıklar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Facewear">
+            <English>Facewear</English>
+            <Czech>Ochrana tváře</Czech>
+            <French>Accessoires de visage</French>
+            <Spanish>Accesorios faciales</Spanish>
+            <Italian>Protezioni viso</Italian>
+            <Polish>Ochrona twarzy</Polish>
+            <Portuguese>Acessórios faciais</Portuguese>
+            <Russian>Очки / Maskи</Russian>
+            <German>Gesichtsschutz</German>
+            <Korean>안면 장비</Korean>
+            <Japanese>フェイスウェア</Japanese>
+            <Chinese>面部裝備</Chinese>
+            <Chinesesimp>面部装备</Chinesesimp>
+            <Turkish>Yüz Aksesuarları</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_CombatRifles">
+            <English>Combat Rifles</English>
+            <Czech>Útočné pušky</Czech>
+            <French>Fusils de combat</French>
+            <Spanish>Fusiles de combate</Spanish>
+            <Italian>Fucili da combattimento</Italian>
+            <Polish>Karabiny bojowe</Polish>
+            <Portuguese>Fuzis de combate</Portuguese>
+            <Russian>Боевые винтовки</Russian>
+            <German>Kampfgewehre</German>
+            <Korean>전투소총</Korean>
+            <Japanese>バトルライフル</Japanese>
+            <Chinese>戰鬥步槍</Chinese>
+            <Chinesesimp>战斗步枪</Chinesesimp>
+            <Turkish>Muharebe Tüfekleri</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_PrecisionRifles">
+            <English>Precision Rifles</English>
+            <Czech>Odstřelovací pušky</Czech>
+            <French>Fusils de précision</French>
+            <Spanish>Fusiles de precisión</Spanish>
+            <Italian>Fucili di precisione</Italian>
+            <Polish>Karabiny precyzyjne</Polish>
+            <Portuguese>Fuzis de precisão</Portuguese>
+            <Russian>High-precision винтовки</Russian>
+            <German>Präzisionsgewehre</German>
+            <Korean>정밀소총</Korean>
+            <Japanese>精密ライフル</Japanese>
+            <Chinese>精確步槍</Chinese>
+            <Chinesesimp>精确步枪</Chinesesimp>
+            <Turkish>Hassas Nişancı Tüfekleri</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_SMG">
+            <English>SMG</English>
+            <Czech>Samopaly</Czech>
+            <French>Pistolets-mitrailleurs</French>
+            <Spanish>Subfusiles</Spanish>
+            <Italian>Pistole mitragliatrici</Italian>
+            <Polish>Pistolety maszynowe</Polish>
+            <Portuguese>Submetralhadoras</Portuguese>
+            <Russian>ПП</Russian>
+            <German>Maschinenpistolen</German>
+            <Korean>기관단총</Korean>
+            <Japanese>サブマシンガン</Japanese>
+            <Chinese>衝鋒槍</Chinese>
+            <Chinesesimp>冲锋枪</Chinesesimp>
+            <Turkish>Hafif Makineli Tüfekler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_LMG">
+            <English>LMG</English>
+            <Czech>Lehké kulomety</Czech>
+            <French>Mitrailleuses légères</French>
+            <Spanish>Ametralladoras ligeras</Spanish>
+            <Italian>Mitragliatrici leggere</Italian>
+            <Polish>Lekkie karabiny maszynowe</Polish>
+            <Portuguese>Metralhadoras leves</Portuguese>
+            <Russian>РП</Russian>
+            <German>Leichte Maschinengewehre</German>
+            <Korean>경기관총</Korean>
+            <Japanese>軽機関銃</Japanese>
+            <Chinese>輕機槍</Chinese>
+            <Chinesesimp>轻机枪</Chinesesimp>
+            <Turkish>Hafif Makineli Tüfekler (LMG)</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Shotguns">
+            <English>Shotguns</English>
+            <Czech>Brokovnice</Czech>
+            <French>Fusils à pompe</French>
+            <Spanish>Escopetas</Spanish>
+            <Italian>Fucili a pompa</Italian>
+            <Polish>Strzelby</Polish>
+            <Portuguese>Espingardas</Portuguese>
+            <Russian>Дробовики</Russian>
+            <German>Flinten</German>
+            <Korean>산탄총</Korean>
+            <Japanese>ショットガン</Japanese>
+            <Chinese>散彈槍</Chinese>
+            <Chinesesimp>散弹枪</Chinesesimp>
+            <Turkish>Av Tüfekleri</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Handguns">
+            <English>Handguns</English>
+            <Czech>Pistole</Czech>
+            <French>Pistolets</French>
+            <Spanish>Pistolas</Spanish>
+            <Italian>Pistole</Italian>
+            <Polish>Broń krótka</Polish>
+            <Portuguese>Pistolas</Portuguese>
+            <Russian>Пистолеты</Russian>
+            <German>Handfeuerwaffen</German>
+            <Korean>권총</Korean>
+            <Japanese>ハンドガン</Japanese>
+            <Chinese>手槍</Chinese>
+            <Chinesesimp>手枪</Chinesesimp>
+            <Turkish>Tabancalar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Launchers">
+            <English>Launchers</English>
+            <Czech>Odpalovače</Czech>
+            <French>Lanceurs</French>
+            <Spanish>Lanzadores</Spanish>
+            <Italian>Lanciatori</Italian>
+            <Polish>Wyrzutnie</Polish>
+            <Portuguese>Lançadores</Portuguese>
+            <Russian>Гранатомёты</Russian>
+            <German>Werfer</German>
+            <Korean>발사기</Korean>
+            <Japanese>ランチャー</Japanese>
+            <Chinese>发射器</Chinese>
+            <Chinesesimp>发射器</Chinesesimp>
+            <Turkish>Fırlatıcılar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_BarrelAttachments">
+            <English>Barrel Attachments</English>
+            <Czech>Hlavňové příslušenství</Czech>
+            <French>Accessoires de canon</French>
+            <Spanish>Accesorios de cañón</Spanish>
+            <Italian>Accessori canna</Italian>
+            <Polish>Modyfikacje lufy</Polish>
+            <Portuguese>Acessórios de cano</Portuguese>
+            <Russian>Дульные насадки</Russian>
+            <German>Laufaufsätze</German>
+            <Korean>총열 부착물</Korean>
+            <Japanese>バレルアタッチメント</Japanese>
+            <Chinese>槍管 accessories</Chinese>
+            <Chinesesimp>枪管配件</Chinesesimp>
+            <Turkish>Namlu Eklentileri</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Ammunition">
+            <English>Ammunition</English>
+            <Czech>Munice</Czech>
+            <French>Munitions</French>
+            <Spanish>Munición</Spanish>
+            <Italian>Munizioni</Italian>
+            <Polish>Amunicja</Polish>
+            <Portuguese>Munição</Portuguese>
+            <Russian>Боеприпасы</Russian>
+            <German>Munition</German>
+            <Korean>탄약</Korean>
+            <Japanese>弾薬</Japanese>
+            <Chinese>彈藥</Chinese>
+            <Chinesesimp>弹药</Chinesesimp>
+            <Turkish>Mühimmat</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Explosive">
+            <English>Explosive</English>
+            <Czech>Výbušniny</Czech>
+            <French>Explosifs</French>
+            <Spanish>Explosivos</Spanish>
+            <Italian>Esplosivi</Italian>
+            <Polish>Materiały wybuchowe</Polish>
+            <Portuguese>Explosivos</Portuguese>
+            <Russian>Взрывчатка</Russian>
+            <German>Sprengstoff</German>
+            <Korean>폭발물</Korean>
+            <Japanese>爆発物</Japanese>
+            <Chinese>爆炸物</Chinese>
+            <Chinesesimp>爆炸物</Chinesesimp>
+            <Turkish>Patlayıcılar</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Optics">
+            <English>Optics / Scopes</English>
+            <Czech>Optika / Zaměřovače</Czech>
+            <French>Optiques / Lunettes</French>
+            <Spanish>Ópticas / Miras</Spanish>
+            <Italian>Ottiche / Mirini</Italian>
+            <Polish>Optyka / Celowniki</Polish>
+            <Portuguese>Óticas / Miras</Portuguese>
+            <Russian>Прицелы / Оптика</Russian>
+            <German>Optiken / Visire</German>
+            <Korean>조준경 / 스코프</Korean>
+            <Japanese>光学照準器 / スコープ</Japanese>
+            <Chinese>瞄準镜</Chinese>
+            <Chinesesimp>瞄准镜</Chinesesimp>
+            <Turkish>Optikler / Dürbünler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Illumination">
+            <English>Illumination</English>
+            <Czech>Osvětlení zbraní</Czech>
+            <French>Illumination tactique</French>
+            <Spanish>Iluminación táctica</Spanish>
+            <Italian>Illuminazione tattica</Italian>
+            <Polish>Oświetlenie taktyczne</Polish>
+            <Portuguese>Iluminação tática</Portuguese>
+            <Russian>Фонари / ЛЦУ</Russian>
+            <German>Taktisches Licht</German>
+            <Korean>전술 조명</Korean>
+            <Japanese>タクティカルライト</Japanese>
+            <Chinese>戰術燈/雷射</Chinese>
+            <Chinesesimp>战术灯/雷射</Chinesesimp>
+            <Turkish>Fenerler / Lazerler</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Category_Bipods">
+            <English>Bipods</English>
+            <Czech>Dvojnožky</Czech>
+            <French>Bieds</French>
+            <Spanish>Bípodes</Spanish>
+            <Italian>Bipiedi</Italian>
+            <Polish>Dwunogi</Polish>
+            <Portuguese>Bípodes</Portuguese>
+            <Russian>Сошки</Russian>
+            <German>Zweibeine</German>
+            <Korean>양각대</Korean>
+            <Japanese>バイポッド</Japanese>
+            <Chinese>雙脚架</Chinese>
+            <Chinesesimp>双脚架</Chinesesimp>
+            <Turkish>Bipodlar</Turkish>
+        </Key>
+    </Package>
+</Project>
