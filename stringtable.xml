@@ -1793,5 +1793,37 @@
             <Chinesesimp>- 你正面临无法控制的剧烈抽搐与颤抖...</Chinesesimp>
             <Turkish>- Kontrol edilemeyen bir titreme çekiyorsunuz...</Turkish>
         </Key>
+        <Key ID="STR_TheBurningRain_Action_Cooking">
+            <English>Cooking</English>
+            <Czech>Vaření</Czech>
+            <French>Cuisson</French>
+            <Spanish>Cocinando</Spanish>
+            <Italian>Cottura</Italian>
+            <Polish>Gotowanie</Polish>
+            <Portuguese>Cozinhando</Portuguese>
+            <Russian>Готовка</Russian>
+            <German>Kochen</German>
+            <Korean>요리 중</Korean>
+            <Japanese>調理中</Japanese>
+            <Chinese>烹飪中</Chinese>
+            <Chinesesimp>烹饪中</Chinesesimp>
+            <Turkish>Pişiriliyor</Turkish>
+        </Key>
+        <Key ID="STR_TheBurningRain_Action_Boiling">
+            <English>Boiling</English>
+            <Czech>Vaření vody</Czech>
+            <French>Ébullition</French>
+            <Spanish>Hirviendo</Spanish>
+            <Italian>Bollitura</Italian>
+            <Polish>Gotowanie wody</Polish>
+            <Portuguese>Fervendo</Portuguese>
+            <Russian>Кипячение</Russian>
+            <German>Abkochen</German>
+            <Korean>끓이는 중</Korean>
+            <Japanese>沸騰中</Japanese>
+            <Chinese>煮沸中</Chinese>
+            <Chinesesimp>煮沸中</Chinesesimp>
+            <Turkish>Kaynatılıyor</Turkish>
+        </Key>
     </Package>
 </Project>

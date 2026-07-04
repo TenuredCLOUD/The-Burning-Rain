@@ -142,7 +142,7 @@ class CfgMisery_InteractionData {
         psychosis = 0; // Affects psychosis
         maskBlocksUse = 1; // Requires gas mask (1 blocks without)
         requiresCanOpener = 0; // Requires can opener/tool
-        removeOnUse = 1; // Remove item after use
+        removeOnUse = 0; // Remove item after use
         replacement = ""; // Replacement object for magazine object once depleted
         sound = ""; // Sound to play
         animation = "";
@@ -163,7 +163,7 @@ class CfgMisery_InteractionData {
         psychosis = 0; // Affects psychosis
         maskBlocksUse = 1; // Requires gas mask (1 blocks without)
         requiresCanOpener = 0; // Requires can opener/tool
-        removeOnUse = 1; // Remove item after use
+        removeOnUse = 0; // Remove item after use
         replacement = ""; // Replacement object for magazine object once depleted
         sound = ""; // Sound to play
         animation = "";
