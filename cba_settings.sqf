@@ -847,8 +847,8 @@ force force misery_ambient_animals_clusterSize = 5;
 force force misery_ambient_animals_maxPopulation = 10;
 
 // Misery Artifacts
-force force misery_artifacts_areas = "[""artifact_spawn_1"", ""artifact_spawn_2"", ""artifact_spawn_3"", ""marker_172"", ""artifact_spawn_4""]";
-force misery_artifacts_debug = false;
+force force misery_artifacts_areas = "[""marker_151"", ""marker_154""]";
+force force misery_artifacts_debug = false;
 
 // Misery Audio
 force force misery_audio_ambientMusicEnabled = true;
@@ -860,9 +860,9 @@ force force misery_audio_enhancedInventorySounds = true;
 force force misery_audio_forgeAmbience = true;
 
 // Misery Chemical
-force force misery_chemical_areas = "[]";
-misery_chemical_finalColor = [1,1,0,1];
-misery_chemical_initialColor = [1,1,0,0];
+force force misery_chemical_areas = "[""chemical_1"", ""chemical_2""]";
+force force misery_chemical_finalColor = [1,1,0,1];
+force force misery_chemical_initialColor = [1,1,0,0];
 
 // Misery Cognito Hazard
 force force misery_cognito_hazard_areas = "[""marker_151"", ""marker_172"", ""marker_154""]";
@@ -965,18 +965,18 @@ force force misery_maintenance_preparedTools = false;
 force force misery_nonvg_enabled = true;
 
 // Misery Persistence
-force misery_persistence_autosaveInterval = 1;
-force misery_persistence_enabled = true;
+force force misery_persistence_autosaveInterval = 1;
+force force misery_persistence_enabled = true;
 force force misery_persistence_gradAdminActions = true;
 force force misery_persistence_gradAutosaveInterval = 30;
-force force misery_persistence_gradESCSave = false;
-force misery_persistence_gradWarning = false;
-misery_persistence_hardcore = false;
+force force misery_persistence_gradESCSave = true;
+force force misery_persistence_gradWarning = false;
+force force misery_persistence_hardcore = false;
 force force misery_persistence_resetSinglePlayerSave = false;
 force force misery_persistence_saveACECargo = true;
 force force misery_persistence_saveACEFuelStations = true;
 force force misery_persistence_saveAE3States = true;
-force misery_persistence_saveSlot = 0;
+force force misery_persistence_saveSlot = 0;
 
 // Misery POI
 force force misery_poi_checkInterval = 30;
