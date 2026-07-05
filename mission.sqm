@@ -13,18 +13,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=882;
+		nextID=886;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={10453.366,9.6426868,2356.4746};
-		dir[]={-0.78208232,-0.41030389,0.46903959};
-		up[]={-0.35187432,0.9119488,0.2110302};
-		aside[]={0.51432663,0,0.85759443};
+		pos[]={9737.6738,29.366323,1984.1671};
+		dir[]={-0.65548551,-0.63171238,0.41385788};
+		up[]={-0.53415477,0.77520287,0.33725253};
+		aside[]={0.5338704,1.4901161e-08,0.84556639};
 	};
 };
 binarizationWanted=0;
@@ -947,7 +947,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=353;
+		items=351;
 		class Item0
 		{
 			dataType="Object";
@@ -11233,19 +11233,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_AdvancedDamage";
-					expression="if (local _this) then {parseSimpleArray _value params ['_hitpoints', '_damage']; {if ((_damage # _forEachIndex) == 0) then {continue}; _this setHitPointDamage [_x, _damage # _forEachIndex, false]} forEach _hitpoints}";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[""hithull"",""hitengine"",""hitavionics"",""hitfuell"",""hitfuelr"",""hitfuel"",""hitglass1"",""hitglass2"",""hitlaileron"",""hitraileron"",""hitlcrudder"",""hitlcelevator"",""hitrelevator"",""#hitlight1"",""#hitlight2"",""#hitlight3""],[0.65,0.74,1,0.54,0.79,0.4,0.73,1,0.86,0.48,0.9,0.5,0.85,0.42,0.76,0.93]]";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 					class Value
@@ -11291,6 +11278,19 @@ class Mission
 									};
 								};
 							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ENH_AdvancedDamage";
+					expression="if (local _this) then {parseSimpleArray _value params ['_hitpoints', '_damage']; {if ((_damage # _forEachIndex) == 0) then {continue}; _this setHitPointDamage [_x, _damage # _forEachIndex, false]} forEach _hitpoints}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[""hithull"",""hitengine"",""hitavionics"",""hitfuell"",""hitfuelr"",""hitfuel"",""hitglass1"",""hitglass2"",""hitlaileron"",""hitraileron"",""hitlcrudder"",""hitlcelevator"",""hitrelevator"",""#hitlight1"",""#hitlight2"",""#hitlight3""],[0.65,0.74,1,0.54,0.79,0.4,0.73,1,0.86,0.48,0.9,0.5,0.85,0.42,0.76,0.93]]";
 						};
 					};
 				};
@@ -20389,95 +20389,6 @@ class Mission
 		class Item307
 		{
 			dataType="Marker";
-			position[]={4884.0161,339.08099,10177.295};
-			name="artifact_spawn_1";
-			markerType="ELLIPSE";
-			type="";
-			alpha=0;
-			a=250;
-			b=250;
-			id=717;
-			atlOffset=0.00024414063;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_markerShape";
-					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="NONE";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item308
-		{
-			dataType="Marker";
-			position[]={4551.457,338.98999,10752.995};
-			name="artifact_spawn_2";
-			markerType="ELLIPSE";
-			type="";
-			alpha=0;
-			a=250;
-			b=250;
-			id=718;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_markerShape";
-					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="NONE";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item309
-		{
-			dataType="Marker";
-			position[]={4623.6382,339,9648.8213};
-			name="artifact_spawn_3";
-			markerType="ELLIPSE";
-			type="";
-			alpha=0;
-			a=250;
-			b=250;
-			id=719;
-			atlOffset=0.00030517578;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_markerShape";
-					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="NONE";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item310
-		{
-			dataType="Marker";
 			position[]={12118.339,140.00301,12514.086};
 			name="Contamination Zone 3_1";
 			text="Contamination Zone";
@@ -20489,7 +20400,7 @@ class Mission
 			id=720;
 			atlOffset=0.00028991699;
 		};
-		class Item311
+		class Item308
 		{
 			dataType="Marker";
 			position[]={12089.206,140.00999,12530.744};
@@ -20520,7 +20431,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item312
+		class Item309
 		{
 			dataType="Marker";
 			position[]={12125.496,140.00986,12534.386};
@@ -20549,7 +20460,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item313
+		class Item310
 		{
 			dataType="Group";
 			side="Independent";
@@ -20630,7 +20541,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item314
+		class Item311
 		{
 			dataType="Group";
 			side="Independent";
@@ -20713,7 +20624,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item315
+		class Item312
 		{
 			dataType="Group";
 			side="Independent";
@@ -20796,7 +20707,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item316
+		class Item313
 		{
 			dataType="Group";
 			side="Independent";
@@ -20877,7 +20788,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item317
+		class Item314
 		{
 			dataType="Group";
 			side="Independent";
@@ -20958,7 +20869,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item318
+		class Item315
 		{
 			dataType="Marker";
 			position[]={4920.29,8.9384518,2416.5317};
@@ -20971,7 +20882,7 @@ class Mission
 			b=0.5;
 			id=745;
 		};
-		class Item319
+		class Item316
 		{
 			dataType="Marker";
 			position[]={4944.8271,9.0019999,2452.2771};
@@ -21003,7 +20914,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item320
+		class Item317
 		{
 			dataType="Marker";
 			position[]={4897.6006,8.9966497,2444.74};
@@ -21031,7 +20942,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item321
+		class Item318
 		{
 			dataType="Marker";
 			position[]={10162.053,4.3299999,1759.813};
@@ -21062,7 +20973,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item322
+		class Item319
 		{
 			dataType="Marker";
 			position[]={1832.022,9.9689999,2194.469};
@@ -21092,7 +21003,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item323
+		class Item320
 		{
 			dataType="Marker";
 			position[]={11641.385,62.033001,14114.362};
@@ -21122,7 +21033,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item324
+		class Item321
 		{
 			dataType="Marker";
 			position[]={8334.5059,293.59799,5971.9941};
@@ -21152,7 +21063,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item325
+		class Item322
 		{
 			dataType="Marker";
 			position[]={1829.015,7.0159998,2191.217};
@@ -21182,7 +21093,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item326
+		class Item323
 		{
 			dataType="Marker";
 			position[]={10442.486,7.1020002,2344.0349};
@@ -21212,7 +21123,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item327
+		class Item324
 		{
 			dataType="Marker";
 			position[]={11653.045,58.957001,14109.822};
@@ -21242,7 +21153,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item328
+		class Item325
 		{
 			dataType="Marker";
 			position[]={3417.6609,192.743,13043.735};
@@ -21274,37 +21185,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item329
-		{
-			dataType="Marker";
-			position[]={3436.2351,193.511,12987.774};
-			name="artifact_spawn_4";
-			markerType="ELLIPSE";
-			type="";
-			alpha=0;
-			a=250;
-			b=250;
-			id=768;
-			atlOffset=-0.00019836426;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_markerShape";
-					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="NONE";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item330
+		class Item326
 		{
 			dataType="Marker";
 			position[]={3459.312,192.73,13018.338};
@@ -21334,7 +21215,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item331
+		class Item327
 		{
 			dataType="Group";
 			side="Independent";
@@ -21417,7 +21298,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item332
+		class Item328
 		{
 			dataType="Group";
 			side="Independent";
@@ -21500,7 +21381,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item333
+		class Item329
 		{
 			dataType="Group";
 			side="Independent";
@@ -21583,7 +21464,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item334
+		class Item330
 		{
 			dataType="Group";
 			side="Independent";
@@ -21666,7 +21547,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item335
+		class Item331
 		{
 			dataType="Group";
 			side="Independent";
@@ -21749,7 +21630,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item336
+		class Item332
 		{
 			dataType="Group";
 			side="Independent";
@@ -21832,7 +21713,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item337
+		class Item333
 		{
 			dataType="Group";
 			side="Independent";
@@ -21915,7 +21796,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item338
+		class Item334
 		{
 			dataType="Group";
 			side="Independent";
@@ -21998,7 +21879,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item339
+		class Item335
 		{
 			dataType="Group";
 			side="Independent";
@@ -22081,7 +21962,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item340
+		class Item336
 		{
 			dataType="Group";
 			side="Independent";
@@ -22164,7 +22045,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item341
+		class Item337
 		{
 			dataType="Group";
 			side="Independent";
@@ -22247,7 +22128,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item342
+		class Item338
 		{
 			dataType="Group";
 			side="Independent";
@@ -22330,7 +22211,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item343
+		class Item339
 		{
 			dataType="Group";
 			side="Independent";
@@ -22413,7 +22294,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item344
+		class Item340
 		{
 			dataType="Group";
 			side="Independent";
@@ -22496,7 +22377,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item345
+		class Item341
 		{
 			dataType="Group";
 			side="Independent";
@@ -22579,7 +22460,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item346
+		class Item342
 		{
 			dataType="Group";
 			side="Independent";
@@ -22662,7 +22543,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item347
+		class Item343
 		{
 			dataType="Marker";
 			position[]={213.804,546.005,11863.544};
@@ -22690,7 +22571,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item348
+		class Item344
 		{
 			dataType="Marker";
 			position[]={10212.583,6,1813.7852};
@@ -22717,7 +22598,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item349
+		class Item345
 		{
 			dataType="Marker";
 			position[]={10002.905,6,1812.5116};
@@ -22744,7 +22625,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item350
+		class Item346
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22763,7 +22644,7 @@ class Mission
 			id=820;
 			type="Land_CampingChair_V2_F";
 		};
-		class Item351
+		class Item347
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22782,7 +22663,7 @@ class Mission
 			id=821;
 			type="Land_CampingChair_V2_F";
 		};
-		class Item352
+		class Item348
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22800,6 +22681,66 @@ class Mission
 			};
 			id=822;
 			type="Land_CampingChair_V2_F";
+		};
+		class Item349
+		{
+			dataType="Marker";
+			position[]={4568.936,339.04501,10252.198};
+			name="chemical_1";
+			markerType="ELLIPSE";
+			type="";
+			alpha=0;
+			a=750;
+			b=750;
+			id=882;
+			atlOffset=-0.00036621094;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item350
+		{
+			dataType="Marker";
+			position[]={3425.3469,192.899,13050.538};
+			name="chemical_2";
+			markerType="ELLIPSE";
+			type="";
+			alpha=0;
+			a=750;
+			b=750;
+			id=885;
+			atlOffset=0.00047302246;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
