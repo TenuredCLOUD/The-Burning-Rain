@@ -4,6 +4,7 @@ author = "TenuredCLOUD";
 overviewPicture = "";
 loadScreen = "titleimages\TBR.jpg";
 briefing = 0;
+saving = 0;
 
 corpseManagerMode = 1;
 corpseLimit = 0;
