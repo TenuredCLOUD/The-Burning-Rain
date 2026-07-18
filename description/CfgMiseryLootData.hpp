@@ -14,7 +14,7 @@ class CfgMisery_LootData {
         itemsMedical[] = {"misery_antibioticpill","misery_painpill","misery_Cenestin","misery_sleeppill","misery_randommedication","ACE_fieldDressing","ACE_splint","ACE_elasticBandage"};
         itemsMedicalM[] = {"misery_antibiotic","misery_antiparasitic","misery_caffetin","misery_pain","misery_Clozapine","misery_Cenestinbottle","misery_ThrombomodulinStimpack","misery_glucose","misery_electrolyte","ACE_morphine","ACE_epinephrine","ACE_bloodIV_500","ACE_surgicalKit"};
         itemsMisc[] = {"ACE_rope6","ACE_rope12","misery_CoppWire","misery_Needlethread","misery_pliers","misery_Fscrewdriver","CUP_item_KitchenKnife","CUP_item_Flashlight","misery_Ducttape"};
-        itemsMiscM[] = {"misery_RFHighNobattery","misery_pliers","misery_Pscrewdriver","misery_Ducttape","CUP_item_Money","CUP_item_Flashlight_ASIL","CUP_item_Geiger"};
+        itemsMiscM[] = {"misery_RFHighNobattery","misery_pliers","misery_Pscrewdriver","misery_Ducttape","CUP_item_Flashlight_ASIL","CUP_item_Geiger"};
         backpacks[] = {"CUP_B_CivPack_WDL","B_OutdoorPack_blu","B_OutdoorPack_tan","CUP_B_AlicePack_Bedroll","CUP_B_AssaultPack_White"};
         backpacksM[] = {"CUP_B_Bergen_BAF_Winter","CUP_B_USPack_White","CUP_B_Backpack_SpecOps_Winter","CUP_B_USMC_Assault_WDL","CUP_B_Motherlode_MTP","CUP_B_SLA_Backpack"};
         special[] = {};
