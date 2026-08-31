@@ -799,7 +799,7 @@ force force misery_ambient_animals_maxPopulation = 10;
 
 // Misery Artifacts
 force force misery_artifacts_areas = "[""artifacts_1"",  ""artifacts_2"",  ""artifacts_3"",  ""artifacts_4"",  ""artifacts_5"",  ""artifacts_6"",  ""artifacts_7"",  ""artifacts_8"",  ""artifacts_9"",  ""artifacts_10"",  ""artifacts_11"",  ""artifacts_12"",  ""artifacts_13"",  ""artifacts_14"",  ""artifacts_15"",  ""artifacts_16"", ""artifacts_17""]";
-force force misery_artifacts_debug = true;
+force force misery_artifacts_debug = false;
 
 // Misery Audio
 force force misery_audio_ambientMusicEnabled = true;
