@@ -2169,7 +2169,7 @@ class CfgMisery_POI {
             aiAccuracy = 0.4;
             aiShake = 0.15;
             aiSpeed = 0.5;
-            spawnChance = 100;
+            spawnChance = 45;
         };
         class Campground_2 {
             composition[] = {
@@ -4339,7 +4339,7 @@ class CfgMisery_POI {
             aiAccuracy = 0.25;
             aiShake = 0.25;
             aiSpeed = 0.25;
-            spawnChance = 100;
+            spawnChance = 45;
         };
         // Heli Wrecks
         class MH47EWreck_1 {
@@ -26088,7 +26088,7 @@ class CfgMisery_POI {
                 "misery_spareTire"
             };
             groundLootCount = 3;
-            spawnChance = 100;
+            spawnChance = 40;
         };
     };
 };
